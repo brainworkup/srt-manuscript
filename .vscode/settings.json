@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    ".history": true,
+    ".quarto": true,
+    ".vscode": true
+  }
+}
