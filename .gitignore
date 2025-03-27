@@ -50,4 +50,4 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-_freeze/
+# _freeze/
