@@ -342,7 +342,7 @@
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>(<span class="at">base_size =</span> <span class="dv">18</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-myplot" class="quarto-float quarto-figure quarto-figure-center" prefix="" data-fignum="1">
+<div id="fig-myplot" class="quarto-float quarto-figure quarto-figure-center" data-fignum="1" prefix="">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-myplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -370,7 +370,7 @@
 <div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div id="cell-fig-import1" class="cell FigureWithNote" data-apa-note="A note below the figure" data-custom-style="FigureWithNote">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"sampleimage.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-import1" class="quarto-float quarto-figure quarto-figure-center" prefix="" data-fignum="2">
+<div id="fig-import1" class="quarto-float quarto-figure quarto-figure-center" data-fignum="2" prefix="">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-import1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -391,7 +391,7 @@
 <p><em>Note</em>. A note below the figure</p>
 </div>
 <p>Figure graphics can be imported directly with Markdown, as with <a href="#fig-import2" class="quarto-xref" aria-expanded="false">Figure&nbsp;3</a>.</p>
-<div id="fig-import2" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" prefix="" data-fignum="3" data-apa-note="A note below the figure" data-custom-style="FigureWithNote">
+<div id="fig-import2" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="A note below the figure" prefix="" data-fignum="3" data-custom-style="FigureWithNote">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-import2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -417,7 +417,7 @@
 <div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell FigureWithNote" data-apa-note="The note below the table." prefix="" data-tblnum="1" data-custom-style="FigureWithNote">
 
 <div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">Numbers =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">4</span>), <span class="at">Letters =</span> LETTERS[<span class="fu">seq</span>(Numbers)]) <span class="sc">%&gt;%</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-mytable" class="cell quarto-float quarto-figure quarto-figure-center" prefix="" data-tblnum="1" data-apa-note="The note below the table.">
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div><div id="tbl-mytable" class="cell quarto-float quarto-figure quarto-figure-center" data-apa-note="The note below the table." data-tblnum="1" prefix="">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -465,7 +465,7 @@
 </div></div>
 <p>To refer to this table in text, use the <code>@</code> symbol followed by the reference label like so: As seen in <a href="#tbl-mytable" class="quarto-xref" aria-expanded="false">Table&nbsp;1</a>, the first few numbers and letters of the alphabet are displayed.</p>
 <p>In <a href="#tbl-mymarkdowntable" class="quarto-xref" aria-expanded="false">Table&nbsp;2</a>, there is an example of a plain markdown table with a note below it.</p>
-<div id="tbl-mymarkdowntable" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" prefix="" data-tblnum="2" data-apa-note="This is a note below the markdown table." data-custom-style="FigureWithNote">
+<div id="tbl-mymarkdowntable" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="This is a note below the markdown table." data-tblnum="2" prefix="" data-custom-style="FigureWithNote">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mymarkdowntable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -529,7 +529,7 @@
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-twocolumn" class="quarto-float quarto-figure quarto-figure-center" prefix="" data-fignum="4" data-fig-align="center">
+<div id="fig-twocolumn" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center" prefix="" data-fignum="4">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-twocolumn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -674,7 +674,7 @@ Schneider, W. J., &amp; McGrew, K. S. (2012). The <span>Cattell-Horn-Carroll</sp
 <p>If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.</p>
 <p>Tables and figures in the first appendix automatically get the prefix “A”, and the numbering starts again at 1. See <a href="#fig-appendfig" class="quarto-xref" aria-expanded="false">Figure&nbsp;A1</a>.</p>
 <p>If there were a second appendix, tables and figures would get the prefix “B”, and the numbering starts again at 1. Make as many appendices as needed.</p>
-<div id="fig-appendfig" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" prefix="A" data-fignum="1" data-apa-note="A note below the figure" data-custom-style="FigureWithNote">
+<div id="fig-appendfig" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="A note below the figure" prefix="A" data-fignum="1" data-custom-style="FigureWithNote">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-appendfig-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">

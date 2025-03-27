@@ -262,7 +262,7 @@ window.Quarto = {
 <p><em>Note</em>. A note below the figure</p>
 </div>
 <p>Figure graphics can be imported directly with Markdown, as with <a href="#fig-import2" class="quarto-xref" aria-expanded="false">Figure&nbsp;3</a>.</p>
-<div id="fig-import2" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" prefix="" data-apa-note="A note below the figure" data-fignum="3" data-custom-style="FigureWithNote">
+<div id="fig-import2" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="A note below the figure" prefix="" data-fignum="3" data-custom-style="FigureWithNote">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-import2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -286,7 +286,7 @@ window.Quarto = {
 <h2 data-anchor-id="displaying-tables">Displaying Tables</h2>
 <p>We can make a table the same way as a figure. Generating a table that conforms to APA format in all document formats can be tricky. When the table is simple, the <code>kable</code> function from knitr works well. Feel free to experiment with different methods, but I have found that David Gohel’s <a href="https://davidgohel.github.io/flextable/">flextable</a> to be the best option when I need something more complex.</p>
 <div class="cell FigureWithNote" data-apa-note="The note below the table." prefix="" data-tblnum="1" data-custom-style="FigureWithNote">
-<div id="tbl-mytable" class="cell quarto-float quarto-figure quarto-figure-center" data-apa-note="The note below the table." data-tblnum="1" prefix="">
+<div id="tbl-mytable" class="cell quarto-float quarto-figure quarto-figure-center" data-apa-note="The note below the table." prefix="" data-tblnum="1">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mytable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -334,7 +334,7 @@ window.Quarto = {
 </div>
 <p>To refer to this table in text, use the <code>@</code> symbol followed by the reference label like so: As seen in <a href="#tbl-mytable" class="quarto-xref" aria-expanded="false">Table&nbsp;1</a>, the first few numbers and letters of the alphabet are displayed.</p>
 <p>In <a href="#tbl-mymarkdowntable" class="quarto-xref" aria-expanded="false">Table&nbsp;2</a>, there is an example of a plain markdown table with a note below it.</p>
-<div id="tbl-mymarkdowntable" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="This is a note below the markdown table." data-tblnum="2" prefix="" data-custom-style="FigureWithNote">
+<div id="tbl-mymarkdowntable" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="This is a note below the markdown table." prefix="" data-tblnum="2" data-custom-style="FigureWithNote">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mymarkdowntable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -389,7 +389,7 @@ window.Quarto = {
 <p>As demonstrated in <a href="#fig-twocolumn" class="quarto-xref" aria-expanded="false">Figure&nbsp;4</a>, you can make figures tables span the two columns by setting the <code>apa-twocolumn</code> chunk option to <code>true</code>.</p>
 <div id="cell-fig-twocolumn" class="cell FigureWithNote" data-layout-align="center" data-apa-note="Figures in two-column mode are only different for jou mode in .pdf documents" data-apa-twocolumn="true" data-custom-style="FigureWithNote">
 <div class="cell-output-display">
-<div id="fig-twocolumn" class="quarto-float quarto-figure quarto-figure-center" prefix="" data-fig-align="center" data-fignum="4">
+<div id="fig-twocolumn" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center" prefix="" data-fignum="4">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-twocolumn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
@@ -534,7 +534,7 @@ Schneider, W. J., &amp; McGrew, K. S. (2012). The <span>Cattell-Horn-Carroll</sp
 <p>If there are multiple appendices, label them with level 1 headings as Appendix A, Appendix B, and so forth.</p>
 <p>Tables and figures in the first appendix automatically get the prefix “A”, and the numbering starts again at 1. See <a href="#fig-appendfig" class="quarto-xref" aria-expanded="false">Figure&nbsp;A1</a>.</p>
 <p>If there were a second appendix, tables and figures would get the prefix “B”, and the numbering starts again at 1. Make as many appendices as needed.</p>
-<div id="fig-appendfig" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" prefix="A" data-apa-note="A note below the figure" data-fignum="1" data-custom-style="FigureWithNote">
+<div id="fig-appendfig" class="quarto-float quarto-figure quarto-figure-center FigureWithNote" data-apa-note="A note below the figure" prefix="A" data-fignum="1" data-custom-style="FigureWithNote">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-appendfig-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="FigureTitle" data-custom-style="FigureTitle">
