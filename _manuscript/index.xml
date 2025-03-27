@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>Using Quarto to Generate Documents in APA Style (7th
+Edition)</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
+          <name>
+            <surname>Fulano</surname>
+            <given-names>Ana</given-names>
+          </name>
+          <string-name>Ana Fulano</string-name>
+          <email>sm@example.org</email>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="id1">a</xref>
+          <xref ref-type="corresp" rid="cor-1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0002</contrib-id>
+          <name>
+            <surname>Zutano</surname>
+            <given-names>Blanca</given-names>
+          </name>
+          <string-name>Blanca Zutano</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">project
+administration</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">formal
+analysis</role>
+          <xref ref-type="aff" rid="id1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0003</contrib-id>
+          <name>
+            <surname>Mengano</surname>
+            <given-names>Carina</given-names>
+          </name>
+          <string-name>Carina Mengano</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">formal
+analysis</role>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-2">b</xref>
+          <xref ref-type="aff" rid="aff-3">c</xref>
+          <xref ref-type="deceased" rid="deceased-3">†</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0004</contrib-id>
+          <name>
+            <surname>C.</surname>
+            <given-names>PerenganoDolorita</given-names>
+          </name>
+          <string-name>true</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <role vocab="https://credit.niso.org" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">methodology</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">formal
+analysis</role>
+          <xref ref-type="aff" rid="aff-4">d</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="id1">
+        <institution content-type="dept">Department of Psychology</institution>
+        <institution-wrap>
+          <institution>Ana and Blanca’s University</institution>
+        </institution-wrap>
+        <addr-line>1234 Capital St.</addr-line>
+        <city>Albany</city>
+        <state>NY</state>
+        <country>USA</country>
+        <postal-code>12084-1234</postal-code>
+      </aff>
+      <aff id="aff-2">
+        <institution-wrap>
+          <institution>Carina’s Primary Affiliation</institution>
+        </institution-wrap>
+      </aff>
+      <aff id="aff-3">
+        <institution-wrap>
+          <institution>Carina’s Secondary Affiliation</institution>
+        </institution-wrap>
+      </aff>
+      <aff id="aff-4">
+        <institution-wrap>
+          <institution/>
+        </institution-wrap>
+        <city>Buffalo</city>
+        <state>NY</state>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1">sm@example.org</corresp>
+        <fn id="deceased-3" fn-type="deceased" symbol="†">
+          <p>Carina
+Mengano</p>
+        </fn>
+      </author-notes>
+      <history/>
+      <abstract>
+This document is a template demonstrating the apaquarto format.
+</abstract>
+      <kwd-group kwd-group-type="author">
+        <kwd>keyword1</kwd>
+        <kwd>keyword2</kwd>
+        <kwd>keyword3</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p>This is my introductory paragraph. The title will be placed above it
+automatically. <italic>Do not start with an introductory
+heading</italic> (e.g., “Introduction”). The title acts as your Level 1
+heading for the introduction.</p>
+    <p>Details about writing headings with markdown in APA style are
+<ext-link ext-link-type="uri" xlink:href="https://wjschne.github.io/apaquarto/writing.html#headings-in-apa-style">here</ext-link>.</p>
+    <sec id="displaying-figures">
+      <title>Displaying Figures</title>
+      <p>A reference label for a figure must have the prefix
+  <monospace>fig-</monospace>, and in a code chunk, the caption must be
+  set with <monospace>fig-cap</monospace>. Captions are in
+  <ext-link ext-link-type="uri" xlink:href="https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case">title
+  case</ext-link>.</p>
+      <fig id="fig-myplot">
+        <caption>
+          <p>Figure 1: The Figure Caption</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-myplot-1.png"/>
+      </fig>
+      <p>To refer to any figure or table, use the <monospace>@</monospace>
+  symbol followed by the reference label (e.g.,
+  <xref alt="Figure 1" rid="fig-myplot">Figure 1</xref>).</p>
+    </sec>
+    <sec id="imported-graphics">
+      <title>Imported Graphics</title>
+      <p>One way to import an existing graphic as a figure is to use
+  <monospace>knitr::include_graphics</monospace> in a code chunk. For
+  example, <xref alt="Figure 2" rid="fig-import1">Figure 2</xref> is an
+  imported image. Note that in apaquarto-pdf documents, we can specify
+  that that a figure or table should span both columns when in journal
+  mode by setting the <monospace>apa-twocolumn</monospace> chunk option
+  to <monospace>true</monospace>. For other formats, this distinction
+  does not matter.</p>
+      <fig id="fig-import1">
+        <caption>
+          <p>Figure 2: An Imported Graphic</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="sampleimage.png"/>
+      </fig>
+      <p>Figure graphics can be imported directly with Markdown, as with
+  <xref alt="Figure 3" rid="fig-import2">Figure 3</xref>.</p>
+      <fig id="fig-import2">
+        <caption>
+          <p>Figure 3: Another Way to Import Graphics</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="sampleimage.png"/>
+      </fig>
+      <p>Which style of creating figures you choose depends on preference
+  and need.</p>
+    </sec>
+    <sec id="displaying-tables">
+      <title>Displaying Tables</title>
+      <p>We can make a table the same way as a figure. Generating a table
+  that conforms to APA format in all document formats can be tricky.
+  When the table is simple, the <monospace>kable</monospace> function
+  from knitr works well. Feel free to experiment with different methods,
+  but I have found that David Gohel’s
+  <ext-link ext-link-type="uri" xlink:href="https://davidgohel.github.io/flextable/">flextable</ext-link>
+  to be the best option when I need something more complex.</p>
+      <fig id="tbl-mytable">
+        <caption>
+          <p>Table 1: The Table Caption</p>
+        </caption>
+        <table-wrap>
+          <table>
+            <thead>
+              <tr>
+                <th align="right">Numbers</th>
+                <th align="left">Letters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="right">1</td>
+                <td align="left">A</td>
+              </tr>
+              <tr>
+                <td align="right">2</td>
+                <td align="left">B</td>
+              </tr>
+              <tr>
+                <td align="right">3</td>
+                <td align="left">C</td>
+              </tr>
+              <tr>
+                <td align="right">4</td>
+                <td align="left">D</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </fig>
+      <p>To refer to this table in text, use the <monospace>@</monospace>
+  symbol followed by the reference label like so: As seen in
+  <xref alt="Table 1" rid="tbl-mytable">Table 1</xref>, the first few
+  numbers and letters of the alphabet are displayed.</p>
+      <p>In <xref alt="Table 2" rid="tbl-mymarkdowntable">Table 2</xref>,
+  there is an example of a plain markdown table with a note below
+  it.</p>
+      <fig id="tbl-mymarkdowntable">
+        <caption>
+          <p>Table 2: Table Caption of a Markdown Table</p>
+        </caption>
+        <table-wrap>
+          <table>
+            <thead>
+              <tr>
+                <th>Default</th>
+                <th align="left">Left</th>
+                <th align="right">Right</th>
+                <th align="center">Center</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12</td>
+                <td align="left">12</td>
+                <td align="right">12</td>
+                <td align="center">12</td>
+              </tr>
+              <tr>
+                <td>123</td>
+                <td align="left">123</td>
+                <td align="right">123</td>
+                <td align="center">123</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td align="left">1</td>
+                <td align="right">1</td>
+                <td align="center">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </fig>
+      <p>What if you want the tables and figures to be at the end of the
+  document? In the .pdf format, you can set the
+  <monospace>floatsintext</monospace> option to false. For .html and
+  .docx documents, there is not yet an automatic way to put tables and
+  figures at the end. You can, of course, just put them all at the end,
+  in order. The reference labels will work no matter where they are in
+  the text.</p>
+    </sec>
+    <sec id="tables-and-figures-spanning-two-columns-in-journal-mode">
+      <title>Tables and Figures Spanning Two Columns in Journal Mode</title>
+      <p>When creating tables and figures in journal mode, care must be
+  taken not to make figures and tables wider than the columns, otherwise
+  <inline-formula><tex-math><![CDATA[\LaTeX]]></tex-math></inline-formula>
+  sometimes makes them disappear.</p>
+      <p>As demonstrated in
+  <xref alt="Figure 4" rid="fig-twocolumn">Figure 4</xref>, you can make
+  figures tables span the two columns by setting the
+  <monospace>apa-twocolumn</monospace> chunk option to
+  <monospace>true</monospace>.</p>
+      <fig id="fig-twocolumn">
+        <caption>
+          <p>Figure 4: A Figure Spanning Two Columns When in Journal
+    Mode</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-twocolumn-1.png"/>
+      </fig>
+    </sec>
+    <sec id="math-and-equations">
+      <title>Math and Equations</title>
+      <p>Inline math uses
+  <inline-formula><tex-math><![CDATA[\LaTeX]]></tex-math></inline-formula>
+  syntax with single dollar signs. For example, the reliability
+  coefficient of my measure is <inline-formula><alternatives><tex-math><![CDATA[r_{XX}=.95]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mi>X</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>.95</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+      <p>If you want to display and refer to a specific formula, enclose the
+  formula in two dollar signs. After the second pair of dollar signs,
+  place the label in curly braces. The label should have an
+  <monospace>#eq-</monospace> prefix. To refer to the formula, use the
+  same label but with the <monospace>@</monospace> symbol. For example,
+  <xref alt="Equation 1" rid="eq-euler">Equation 1</xref> is Euler’s
+  Identity, which is much admired for its elegance.</p>
+    </sec>
+    <sec id="citations">
+      <title>Citations</title>
+      <p>See
+  <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/footnotes-and-citations.html">here</ext-link>
+  for instructions on setting up citations and references.</p>
+      <p>A parenthetical citation requires square brackets
+  (<xref alt="Cameron and Trivedi 2013" rid="ref-CameronTrivedi2013" ref-type="bibr">Cameron
+  and Trivedi 2013</xref>). This reference was in my bibliography file.
+  An in-text citation is done like so:</p>
+      <p>Cameron and Trivedi
+  (<xref alt="2013" rid="ref-CameronTrivedi2013" ref-type="bibr">2013</xref>)
+  make some important points …</p>
+      <p>See
+  <ext-link ext-link-type="uri" xlink:href="https://wjschne.github.io/apaquarto/writing.html#references">here</ext-link>
+  for explanations, examples, and citation features exclusive to
+  apaquarto. For example, apaquarto can automatically handle possessive
+  citations:</p>
+      <p>Schneider and McGrew
+  (<xref alt="2012" rid="ref-schneider2012cattell" ref-type="bibr">2012</xref>’s)
+  position was …</p>
+    </sec>
+    <sec id="masking-author-identity-for-peer-review">
+      <title>Masking Author Identity for Peer Review</title>
+      <p>Setting <monospace>mask</monospace> to <monospace>true</monospace>
+  will remove author names, affiliations, and correspondence from the
+  title page. Any references listed in the
+  <monospace>masked-citations</monospace> field will be masked as well.
+  See
+  <ext-link ext-link-type="uri" xlink:href="https://wjschne.github.io/apaquarto/writing.html#masked-citations-for-anonymous-peer-review">here</ext-link>
+  for more information.</p>
+      <p>
+        <styled-content id="eq-euler">
+          <disp-formula>
+            <alternatives>
+              <tex-math><![CDATA[
+  e^{i\pi}+1=0
+   \qquad(1)]]></tex-math>
+              <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                <mml:mrow>
+                  <mml:msup>
+                    <mml:mi>e</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>π</mml:mi>
+                    </mml:mrow>
+                  </mml:msup>
+                  <mml:mo>+</mml:mo>
+                  <mml:mn>1</mml:mn>
+                  <mml:mo>=</mml:mo>
+                  <mml:mn>0</mml:mn>
+                  <mml:mspace width="2.0em"/>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:mn>1</mml:mn>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                </mml:mrow>
+              </mml:math>
+            </alternatives>
+          </disp-formula>
+        </styled-content>
+      </p>
+    </sec>
+    <sec id="block-quotes">
+      <title>Block Quotes</title>
+      <p>Sometimes you want to give a longer quote that needs to go in its
+  own paragraph. Block quotes are on their own line starting with the
+  &gt; character. For example, Austen
+  (<xref alt="[1814] 1990" rid="ref-austenMansfieldPark1990" ref-type="bibr">[1814]
+  1990</xref>’s) <italic>Mansfield Park</italic> has some memorable
+  insights about the mind:</p>
+      <disp-quote>
+        <p>If any one faculty of our nature may be called more wonderful
+    than the rest, I do think it is memory. There seems something more
+    speakingly incomprehensible in the powers, the failures, the
+    inequalities of memory, than in any other of our intelligences. The
+    memory is sometimes so retentive, so serviceable, so obedient; at
+    others, so bewildered and so weak; and at others again, so tyrannic,
+    so beyond control! We are, to be sure, a miracle every way; but our
+    powers of recollecting and of forgetting do seem peculiarly past
+    finding out. (p. 163)</p>
+      </disp-quote>
+      <p>If your quote has multiple paragraphs, like this passage from Brown
+  (<xref alt="2012" rid="ref-brownHowKilledPluto2012" ref-type="bibr">2012</xref>),
+  separate them with a lone <monospace>&gt;</monospace> character
+  between the lines:</p>
+      <disp-quote>
+        <p>In the entire field of astronomy, there is no word other than
+    <italic>planet</italic> that has a precise, lawyerly definition, in
+    which certain criteria are specifically enumerated. Why does
+    <italic>planet</italic> have such a definition but
+    <italic>star</italic>, <italic>galaxy</italic>, and <italic>giant
+    molecular cloud</italic> do not? Because in astronomy, as in most
+    sciences, scientists work by concepts rather than by definitions.
+    The concept of a star is clear; a star is a collection of gas with
+    fusion reactions in the interior giving off energy. A galaxy is a
+    large, bound collection of stars. A giant molecular cloud is a giant
+    cloud of molecules. The concept of a planet—in the eight-planet
+    solar system—is equally simple to state. A planet is a one of a
+    small number of bodies that dominate a planetary system. That is a
+    concept, not a definition. How would you write that down in a
+    precise definition?</p>
+        <p>I wouldn’t. Once you write down a definition with lawyerly
+    precision, you get the lawyers involved in deciding whether or not
+    your objects are planets. Astronomers work in concepts. We rarely
+    call in the attorneys for adjudication. (p. 242)</p>
+      </disp-quote>
+    </sec>
+    <sec id="hypotheses-aims-and-objectives">
+      <title>Hypotheses, Aims, and Objectives</title>
+      <p>The last paragraph of the introduction usually states the specific
+  hypotheses of the study, often in a way that links them to the
+  research design.</p>
+    </sec>
+    <sec id="method">
+      <title>Method</title>
+      <p>General remarks on method. This paragraph is optional.</p>
+      <p>Not all papers require each of these sections. Edit them as needed.
+  Consult the
+  <ext-link ext-link-type="uri" xlink:href="https://apastyle.apa.org/jars">Journal
+  Article Reporting Standards</ext-link> for what is needed for your
+  type of article.</p>
+      <sec id="participants">
+        <title>Participants</title>
+        <p>Who are they? How were they recruited? Report criteria for
+    participant inclusion and exclusion. Perhaps some basic demographic
+    stats are in order. A table is a great way to avoid repetition in
+    statistical reporting.</p>
+      </sec>
+      <sec id="measures">
+        <title>Measures</title>
+        <p>This section can also be titled <bold>Materials</bold> or
+    <bold>Apparatus</bold>. Whatever tools, equipment, or measurement
+    devices used in the study should be described.</p>
+        <sec id="measure-a">
+          <title>Measure A</title>
+          <p>Describe Measure A.</p>
+        </sec>
+        <sec id="measure-b">
+          <title>Measure B</title>
+          <p>Describe Measure B.</p>
+          <sec id="subscale-b1">
+            <title>Subscale B1</title>
+            <p>A paragraph after a 4th-level header will appear on the same
+        line as the header.</p>
+          </sec>
+          <sec id="subscale-b2">
+            <title>Subscale B2</title>
+            <p>A paragraph after a 4th-level header will appear on the same
+        line as the header.</p>
+            <sec id="subscale-b2a">
+              <title>Subscale B2a</title>
+              <p>A paragraph after a 5th-level header will appear on the
+          same line as the header.</p>
+            </sec>
+            <sec id="subscale-b2b">
+              <title>Subscale B2b</title>
+              <p>A paragraph after a 5th-level header will appear on the
+          same line as the header.</p>
+            </sec>
+          </sec>
+        </sec>
+      </sec>
+      <sec id="procedure">
+        <title>Procedure</title>
+        <p>What did participants do? How are the data going to be
+    analyzed?</p>
+      </sec>
+    </sec>
+    <sec id="results">
+      <title>Results</title>
+      <sec id="descriptive-statistics">
+        <title>Descriptive Statistics</title>
+        <p>Describe the basic characteristics of the primary variables. My
+    ideal is to describe the variables well enough that someone
+    conducting a meta-analysis can include the study without needing to
+    ask for additional information.</p>
+      </sec>
+    </sec>
+    <sec id="discussion">
+      <title>Discussion</title>
+      <p>Describe results in non-statistical terms. </p>
+      <sec id="limitations-and-future-directions">
+        <title>Limitations and Future Directions</title>
+        <p>Every study has limitations. Based on this study, some additional
+    steps might include…</p>
+      </sec>
+      <sec id="conclusion">
+        <title>Conclusion</title>
+        <p>Describe the main point of the paper.</p>
+      </sec>
+    </sec>
+    <sec id="references">
+      <title>References</title>
+    </sec>
+    <sec id="appendix">
+      <title>Appendix</title>
+    </sec>
+    <sec id="the-title-for-appendix">
+      <title>The Title for Appendix</title>
+      <p>If there are multiple appendices, label them with level 1 headings
+  as Appendix A, Appendix B, and so forth.</p>
+      <p>Tables and figures in the first appendix automatically get the
+  prefix “A”, and the numbering starts again at 1. See
+  <xref alt="Figure 5" rid="fig-appendfig">Figure 5</xref>.</p>
+      <p>If there were a second appendix, tables and figures would get the
+  prefix “B”, and the numbering starts again at 1. Make as many
+  appendices as needed.</p>
+      <fig id="fig-appendfig">
+        <caption>
+          <p>Figure 5: Appendix Figure</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="sampleimage.png"/>
+      </fig>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title/>
+      <ref id="ref-brownHowKilledPluto2012">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>Mike</given-names>
+            </name>
+          </person-group>
+          <source>How I killed Pluto and why it had it coming</source>
+          <publisher-name>Spiegel &amp; Grau</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+          <year iso-8601-date="2012">2012</year>
+        </element-citation>
+      </ref>
+      <ref id="ref-CameronTrivedi2013">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cameron</surname>
+              <given-names>A. Colin</given-names>
+            </name>
+            <name>
+              <surname>Trivedi</surname>
+              <given-names>Pravin K.</given-names>
+            </name>
+          </person-group>
+          <source>Regression analysis of count data</source>
+          <publisher-name>Cambridge University Press</publisher-name>
+          <publisher-loc>Cambridge</publisher-loc>
+          <year iso-8601-date="2013">2013</year>
+          <edition>2nd</edition>
+          <pub-id pub-id-type="doi">10.1017/CBO9781139013567</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-austenMansfieldPark1990">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Austen</surname>
+              <given-names>Jane</given-names>
+            </name>
+          </person-group>
+          <source>Mansfield Park</source>
+          <publisher-name>Oxford University Press</publisher-name>
+          <year iso-8601-date="1990">1990</year>
+        </element-citation>
+      </ref>
+      <ref id="ref-schneider2012cattell">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schneider</surname>
+              <given-names>William Joel</given-names>
+            </name>
+            <name>
+              <surname>McGrew</surname>
+              <given-names>Kevin S.</given-names>
+            </name>
+          </person-group>
+          <article-title>The Cattell-Horn-Carroll model of intelligence</article-title>
+          <source>Contemporary intellectual assessment: Theories, tests, and issues</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Flanagan</surname>
+              <given-names>Dawn P.</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>Patti L.</given-names>
+            </name>
+          </person-group>
+          <publisher-name>Guilford Press</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+          <year iso-8601-date="2012">2012</year>
+          <edition>3</edition>
+          <isbn>978-1-60918-995-2</isbn>
+          <uri>https://psycnet.apa.org/record/2012-09043-004</uri>
+          <fpage>99</fpage>
+          <lpage>144</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <sub-article article-type="notebook" id="nb-3-nb-article">
+    <front-stub>
+      <title-group>
+        <article-title>Using Quarto to Generate Documents in APA Style (7th
+Edition)</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
+          <name>
+            <surname>Fulano</surname>
+            <given-names>Ana</given-names>
+          </name>
+          <string-name>Ana Fulano</string-name>
+          <email>sm@example.org</email>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="id1-nb-article">a</xref>
+          <xref ref-type="corresp" rid="cor-1-nb-article">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0002</contrib-id>
+          <name>
+            <surname>Zutano</surname>
+            <given-names>Blanca</given-names>
+          </name>
+          <string-name>Blanca Zutano</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">project
+administration</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">formal
+analysis</role>
+          <xref ref-type="aff" rid="id1-nb-article">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0003</contrib-id>
+          <name>
+            <surname>Mengano</surname>
+            <given-names>Carina</given-names>
+          </name>
+          <string-name>Carina Mengano</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">formal
+analysis</role>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-2-nb-article">b</xref>
+          <xref ref-type="aff" rid="aff-3-nb-article">c</xref>
+          <xref ref-type="deceased" rid="deceased-3-nb-article">†</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0000-0000-0004</contrib-id>
+          <name>
+            <surname>C.</surname>
+            <given-names>PerenganoDolorita</given-names>
+          </name>
+          <string-name>true</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <role vocab="https://credit.niso.org" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">methodology</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">formal
+analysis</role>
+          <xref ref-type="aff" rid="aff-4-nb-article">d</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="id1-nb-article">
+        <institution content-type="dept">Department of Psychology</institution>
+        <institution-wrap>
+          <institution>Ana and Blanca’s University</institution>
+        </institution-wrap>
+        <addr-line>1234 Capital St.</addr-line>
+        <city>Albany</city>
+        <state>NY</state>
+        <country>USA</country>
+        <postal-code>12084-1234</postal-code>
+      </aff>
+      <aff id="aff-2-nb-article">
+        <institution-wrap>
+          <institution>Carina’s Primary Affiliation</institution>
+        </institution-wrap>
+      </aff>
+      <aff id="aff-3-nb-article">
+        <institution-wrap>
+          <institution>Carina’s Secondary Affiliation</institution>
+        </institution-wrap>
+      </aff>
+      <aff id="aff-4-nb-article">
+        <institution-wrap>
+          <institution/>
+        </institution-wrap>
+        <city>Buffalo</city>
+        <state>NY</state>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1-nb-article">sm@example.org</corresp>
+        <fn id="deceased-3-nb-article" fn-type="deceased" symbol="†">
+          <p>Carina
+Mengano</p>
+        </fn>
+      </author-notes>
+      <abstract>
+This document is a template demonstrating the apaquarto format.
+</abstract>
+    </front-stub>
+    <body>
+      <sec specific-use="notebook-content">
+        <code language="r script">library(conflicted)
+library(tidyverse)</code>
+        <boxed-text>
+          <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4.9000     ✔ readr     2.1.5.9000
+✔ forcats   1.0.0.9000     ✔ stringr   1.5.1.9000
+✔ ggplot2   3.5.1.9000     ✔ tibble    3.2.1.9044
+✔ lubridate 1.9.4          ✔ tidyr     1.3.1.9000
+✔ purrr     1.0.4.9000     </preformat>
+        </boxed-text>
+        <code language="r script">library(flextable)
+library(ftExtra)</code>
+        <boxed-text>
+          <preformat>Registered S3 method overwritten by 'ftExtra':
+  method                  from     
+  as_flextable.data.frame flextable</preformat>
+        </boxed-text>
+        <code language="r script">library(knitr)
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+conflicts_prefer(flextable::separate_header, .quiet = TRUE)</code>
+      </sec>
+      <p>This is my introductory paragraph. The title will be placed above it
+automatically. <italic>Do not start with an introductory
+heading</italic> (e.g., “Introduction”). The title acts as your Level 1
+heading for the introduction.</p>
+      <p>Details about writing headings with markdown in APA style are
+<ext-link ext-link-type="uri" xlink:href="https://wjschne.github.io/apaquarto/writing.html#headings-in-apa-style">here</ext-link>.</p>
+      <sec id="displaying-figures-nb-article">
+        <title>Displaying Figures</title>
+        <p>A reference label for a figure must have the prefix
+  <monospace>fig-</monospace>, and in a code chunk, the caption must be
+  set with <monospace>fig-cap</monospace>. Captions are in
+  <ext-link ext-link-type="uri" xlink:href="https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case">title
+  case</ext-link>.</p>
+        <sec id="cell-fig-myplot-nb-article" specific-use="notebook-content">
+          <code language="r script">ggplot(data.frame(x = c(0, 35)), aes(x)) +
+  stat_function(
+    fun = dchisq,
+    args = list(df = 10),
+    geom = "area",
+    n = 1000,
+    color = NA,
+    fill = "#41448780"
+  ) +
+  theme_void(base_size = 18)</code>
+          <fig id="fig-myplot-nb-article">
+            <caption>
+              <p>Figure 1: The Figure Caption</p>
+            </caption>
+            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-myplot-1.png"/>
+          </fig>
+        </sec>
+        <p>To refer to any figure or table, use the <monospace>@</monospace>
+  symbol followed by the reference label (e.g.,
+  <xref alt="Figure 1" rid="fig-myplot-nb-article">Figure 1</xref>).</p>
+      </sec>
+      <sec id="imported-graphics-nb-article">
+        <title>Imported Graphics</title>
+        <p>One way to import an existing graphic as a figure is to use
+  <monospace>knitr::include_graphics</monospace> in a code chunk. For
+  example, <xref alt="Figure 2" rid="fig-import1-nb-article">Figure 2</xref> is an
+  imported image. Note that in apaquarto-pdf documents, we can specify
+  that that a figure or table should span both columns when in journal
+  mode by setting the <monospace>apa-twocolumn</monospace> chunk option
+  to <monospace>true</monospace>. For other formats, this distinction
+  does not matter.</p>
+        <sec id="cell-fig-import1-nb-article" specific-use="notebook-content">
+          <code language="r script">knitr::include_graphics("sampleimage.png")</code>
+          <fig id="fig-import1-nb-article">
+            <caption>
+              <p>Figure 2: An Imported Graphic</p>
+            </caption>
+            <graphic mimetype="image" mime-subtype="png" xlink:href="sampleimage.png"/>
+          </fig>
+        </sec>
+        <p>Figure graphics can be imported directly with Markdown, as with
+  <xref alt="Figure 3" rid="fig-import2-nb-article">Figure 3</xref>.</p>
+        <fig id="fig-import2-nb-article">
+          <caption>
+            <p>Figure 3: Another Way to Import Graphics</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="sampleimage.png"/>
+        </fig>
+        <p>Which style of creating figures you choose depends on preference
+  and need.</p>
+      </sec>
+      <sec id="displaying-tables-nb-article">
+        <title>Displaying Tables</title>
+        <p>We can make a table the same way as a figure. Generating a table
+  that conforms to APA format in all document formats can be tricky.
+  When the table is simple, the <monospace>kable</monospace> function
+  from knitr works well. Feel free to experiment with different methods,
+  but I have found that David Gohel’s
+  <ext-link ext-link-type="uri" xlink:href="https://davidgohel.github.io/flextable/">flextable</ext-link>
+  to be the best option when I need something more complex.</p>
+        <sec specific-use="notebook-content">
+          <code language="r script">tibble(Numbers = seq(1, 4), Letters = LETTERS[seq(Numbers)]) %&gt;%
+  knitr::kable()</code>
+          <fig id="tbl-mytable-nb-article">
+            <caption>
+              <p>Table 1: The Table Caption</p>
+            </caption>
+            <table-wrap>
+              <table>
+                <thead>
+                  <tr>
+                    <th align="right">Numbers</th>
+                    <th align="left">Letters</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="right">1</td>
+                    <td align="left">A</td>
+                  </tr>
+                  <tr>
+                    <td align="right">2</td>
+                    <td align="left">B</td>
+                  </tr>
+                  <tr>
+                    <td align="right">3</td>
+                    <td align="left">C</td>
+                  </tr>
+                  <tr>
+                    <td align="right">4</td>
+                    <td align="left">D</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </fig>
+        </sec>
+        <p>To refer to this table in text, use the <monospace>@</monospace>
+  symbol followed by the reference label like so: As seen in
+  <xref alt="Table 1" rid="tbl-mytable-nb-article">Table 1</xref>, the first few
+  numbers and letters of the alphabet are displayed.</p>
+        <p>In <xref alt="Table 2" rid="tbl-mymarkdowntable-nb-article">Table 2</xref>,
+  there is an example of a plain markdown table with a note below
+  it.</p>
+        <fig id="tbl-mymarkdowntable-nb-article">
+          <caption>
+            <p>Table 2: Table Caption of a Markdown Table</p>
+          </caption>
+          <table-wrap>
+            <table>
+              <thead>
+                <tr>
+                  <th>Default</th>
+                  <th align="left">Left</th>
+                  <th align="right">Right</th>
+                  <th align="center">Center</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12</td>
+                  <td align="left">12</td>
+                  <td align="right">12</td>
+                  <td align="center">12</td>
+                </tr>
+                <tr>
+                  <td>123</td>
+                  <td align="left">123</td>
+                  <td align="right">123</td>
+                  <td align="center">123</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td align="left">1</td>
+                  <td align="right">1</td>
+                  <td align="center">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p>What if you want the tables and figures to be at the end of the
+  document? In the .pdf format, you can set the
+  <monospace>floatsintext</monospace> option to false. For .html and
+  .docx documents, there is not yet an automatic way to put tables and
+  figures at the end. You can, of course, just put them all at the end,
+  in order. The reference labels will work no matter where they are in
+  the text.</p>
+      </sec>
+      <sec id="tables-and-figures-spanning-two-columns-in-journal-mode-nb-article">
+        <title>Tables and Figures Spanning Two Columns in Journal Mode</title>
+        <p>When creating tables and figures in journal mode, care must be
+  taken not to make figures and tables wider than the columns, otherwise
+  <inline-formula><tex-math><![CDATA[\LaTeX]]></tex-math></inline-formula>
+  sometimes makes them disappear.</p>
+        <p>As demonstrated in
+  <xref alt="Figure 4" rid="fig-twocolumn-nb-article">Figure 4</xref>, you can make
+  figures tables span the two columns by setting the
+  <monospace>apa-twocolumn</monospace> chunk option to
+  <monospace>true</monospace>.</p>
+        <sec id="cell-fig-twocolumn-nb-article" specific-use="notebook-content">
+          <code language="r script">ggplot(data.frame(x = c(-4, 4)), aes(x)) +
+  stat_function(
+    fun = dnorm,
+    geom = "area",
+    n = 1000,
+    color = NA,
+    fill = "#41448780"
+  ) +
+  theme_void()</code>
+          <fig id="fig-twocolumn-nb-article">
+            <caption>
+              <p>Figure 4: A Figure Spanning Two Columns When in Journal
+    Mode</p>
+            </caption>
+            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-twocolumn-1.png"/>
+          </fig>
+        </sec>
+      </sec>
+      <sec id="math-and-equations-nb-article">
+        <title>Math and Equations</title>
+        <p>Inline math uses
+  <inline-formula><tex-math><![CDATA[\LaTeX]]></tex-math></inline-formula>
+  syntax with single dollar signs. For example, the reliability
+  coefficient of my measure is <inline-formula><alternatives><tex-math><![CDATA[r_{XX}=.95]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>X</mml:mi><mml:mi>X</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>.95</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
+        <p>If you want to display and refer to a specific formula, enclose the
+  formula in two dollar signs. After the second pair of dollar signs,
+  place the label in curly braces. The label should have an
+  <monospace>#eq-</monospace> prefix. To refer to the formula, use the
+  same label but with the <monospace>@</monospace> symbol. For example,
+  <xref alt="Equation 1" rid="eq-euler-nb-article">Equation 1</xref> is Euler’s
+  Identity, which is much admired for its elegance.</p>
+      </sec>
+      <sec id="citations-nb-article">
+        <title>Citations</title>
+        <p>See
+  <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/footnotes-and-citations.html">here</ext-link>
+  for instructions on setting up citations and references.</p>
+        <p>A parenthetical citation requires square brackets
+  (<xref alt="Cameron and Trivedi 2013" rid="ref-CameronTrivedi2013-nb-article" ref-type="bibr">Cameron
+  and Trivedi 2013</xref>). This reference was in my bibliography file.
+  An in-text citation is done like so:</p>
+        <p>Cameron and Trivedi
+  (<xref alt="2013" rid="ref-CameronTrivedi2013-nb-article" ref-type="bibr">2013</xref>)
+  make some important points …</p>
+        <p>See
+  <ext-link ext-link-type="uri" xlink:href="https://wjschne.github.io/apaquarto/writing.html#references">here</ext-link>
+  for explanations, examples, and citation features exclusive to
+  apaquarto. For example, apaquarto can automatically handle possessive
+  citations:</p>
+        <p>Schneider and McGrew
+  (<xref alt="2012" rid="ref-schneider2012cattell-nb-article" ref-type="bibr">2012</xref>’s)
+  position was …</p>
+      </sec>
+      <sec id="masking-author-identity-for-peer-review-nb-article">
+        <title>Masking Author Identity for Peer Review</title>
+        <p>Setting <monospace>mask</monospace> to <monospace>true</monospace>
+  will remove author names, affiliations, and correspondence from the
+  title page. Any references listed in the
+  <monospace>masked-citations</monospace> field will be masked as well.
+  See
+  <ext-link ext-link-type="uri" xlink:href="https://wjschne.github.io/apaquarto/writing.html#masked-citations-for-anonymous-peer-review">here</ext-link>
+  for more information.</p>
+        <p>
+          <styled-content id="eq-euler-nb-article">
+            <disp-formula>
+              <alternatives>
+                <tex-math><![CDATA[
+  e^{i\pi}+1=0
+   \qquad(1)]]></tex-math>
+                <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                  <mml:mrow>
+                    <mml:msup>
+                      <mml:mi>e</mml:mi>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mi>π</mml:mi>
+                      </mml:mrow>
+                    </mml:msup>
+                    <mml:mo>+</mml:mo>
+                    <mml:mn>1</mml:mn>
+                    <mml:mo>=</mml:mo>
+                    <mml:mn>0</mml:mn>
+                    <mml:mspace width="2.0em"/>
+                    <mml:mrow>
+                      <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                      <mml:mn>1</mml:mn>
+                      <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                    </mml:mrow>
+                  </mml:mrow>
+                </mml:math>
+              </alternatives>
+            </disp-formula>
+          </styled-content>
+        </p>
+      </sec>
+      <sec id="block-quotes-nb-article">
+        <title>Block Quotes</title>
+        <p>Sometimes you want to give a longer quote that needs to go in its
+  own paragraph. Block quotes are on their own line starting with the
+  &gt; character. For example, Austen
+  (<xref alt="[1814] 1990" rid="ref-austenMansfieldPark1990-nb-article" ref-type="bibr">[1814]
+  1990</xref>’s) <italic>Mansfield Park</italic> has some memorable
+  insights about the mind:</p>
+        <disp-quote>
+          <p>If any one faculty of our nature may be called more wonderful
+    than the rest, I do think it is memory. There seems something more
+    speakingly incomprehensible in the powers, the failures, the
+    inequalities of memory, than in any other of our intelligences. The
+    memory is sometimes so retentive, so serviceable, so obedient; at
+    others, so bewildered and so weak; and at others again, so tyrannic,
+    so beyond control! We are, to be sure, a miracle every way; but our
+    powers of recollecting and of forgetting do seem peculiarly past
+    finding out. (p. 163)</p>
+        </disp-quote>
+        <p>If your quote has multiple paragraphs, like this passage from Brown
+  (<xref alt="2012" rid="ref-brownHowKilledPluto2012-nb-article" ref-type="bibr">2012</xref>),
+  separate them with a lone <monospace>&gt;</monospace> character
+  between the lines:</p>
+        <disp-quote>
+          <p>In the entire field of astronomy, there is no word other than
+    <italic>planet</italic> that has a precise, lawyerly definition, in
+    which certain criteria are specifically enumerated. Why does
+    <italic>planet</italic> have such a definition but
+    <italic>star</italic>, <italic>galaxy</italic>, and <italic>giant
+    molecular cloud</italic> do not? Because in astronomy, as in most
+    sciences, scientists work by concepts rather than by definitions.
+    The concept of a star is clear; a star is a collection of gas with
+    fusion reactions in the interior giving off energy. A galaxy is a
+    large, bound collection of stars. A giant molecular cloud is a giant
+    cloud of molecules. The concept of a planet—in the eight-planet
+    solar system—is equally simple to state. A planet is a one of a
+    small number of bodies that dominate a planetary system. That is a
+    concept, not a definition. How would you write that down in a
+    precise definition?</p>
+          <p>I wouldn’t. Once you write down a definition with lawyerly
+    precision, you get the lawyers involved in deciding whether or not
+    your objects are planets. Astronomers work in concepts. We rarely
+    call in the attorneys for adjudication. (p. 242)</p>
+        </disp-quote>
+      </sec>
+      <sec id="hypotheses-aims-and-objectives-nb-article">
+        <title>Hypotheses, Aims, and Objectives</title>
+        <p>The last paragraph of the introduction usually states the specific
+  hypotheses of the study, often in a way that links them to the
+  research design.</p>
+      </sec>
+      <sec id="method-nb-article">
+        <title>Method</title>
+        <p>General remarks on method. This paragraph is optional.</p>
+        <p>Not all papers require each of these sections. Edit them as needed.
+  Consult the
+  <ext-link ext-link-type="uri" xlink:href="https://apastyle.apa.org/jars">Journal
+  Article Reporting Standards</ext-link> for what is needed for your
+  type of article.</p>
+        <sec id="participants-nb-article">
+          <title>Participants</title>
+          <p>Who are they? How were they recruited? Report criteria for
+    participant inclusion and exclusion. Perhaps some basic demographic
+    stats are in order. A table is a great way to avoid repetition in
+    statistical reporting.</p>
+        </sec>
+        <sec id="measures-nb-article">
+          <title>Measures</title>
+          <p>This section can also be titled <bold>Materials</bold> or
+    <bold>Apparatus</bold>. Whatever tools, equipment, or measurement
+    devices used in the study should be described.</p>
+          <sec id="measure-a-nb-article">
+            <title>Measure A</title>
+            <p>Describe Measure A.</p>
+          </sec>
+          <sec id="measure-b-nb-article">
+            <title>Measure B</title>
+            <p>Describe Measure B.</p>
+            <sec id="subscale-b1-nb-article">
+              <title>Subscale B1</title>
+              <p>A paragraph after a 4th-level header will appear on the same
+        line as the header.</p>
+            </sec>
+            <sec id="subscale-b2-nb-article">
+              <title>Subscale B2</title>
+              <p>A paragraph after a 4th-level header will appear on the same
+        line as the header.</p>
+              <sec id="subscale-b2a-nb-article">
+                <title>Subscale B2a</title>
+                <p>A paragraph after a 5th-level header will appear on the
+          same line as the header.</p>
+              </sec>
+              <sec id="subscale-b2b-nb-article">
+                <title>Subscale B2b</title>
+                <p>A paragraph after a 5th-level header will appear on the
+          same line as the header.</p>
+              </sec>
+            </sec>
+          </sec>
+        </sec>
+        <sec id="procedure-nb-article">
+          <title>Procedure</title>
+          <p>What did participants do? How are the data going to be
+    analyzed?</p>
+        </sec>
+      </sec>
+      <sec id="results-nb-article">
+        <title>Results</title>
+        <sec id="descriptive-statistics-nb-article">
+          <title>Descriptive Statistics</title>
+          <p>Describe the basic characteristics of the primary variables. My
+    ideal is to describe the variables well enough that someone
+    conducting a meta-analysis can include the study without needing to
+    ask for additional information.</p>
+        </sec>
+      </sec>
+      <sec id="discussion-nb-article">
+        <title>Discussion</title>
+        <p>Describe results in non-statistical terms. </p>
+        <sec id="limitations-and-future-directions-nb-article">
+          <title>Limitations and Future Directions</title>
+          <p>Every study has limitations. Based on this study, some additional
+    steps might include…</p>
+        </sec>
+        <sec id="conclusion-nb-article">
+          <title>Conclusion</title>
+          <p>Describe the main point of the paper.</p>
+        </sec>
+      </sec>
+      <sec id="references-nb-article">
+        <title>References</title>
+      </sec>
+      <sec id="appendix-nb-article">
+        <title>Appendix</title>
+      </sec>
+      <sec id="the-title-for-appendix-nb-article">
+        <title>The Title for Appendix</title>
+        <p>If there are multiple appendices, label them with level 1 headings
+  as Appendix A, Appendix B, and so forth.</p>
+        <p>Tables and figures in the first appendix automatically get the
+  prefix “A”, and the numbering starts again at 1. See
+  <xref alt="Figure 5" rid="fig-appendfig-nb-article">Figure 5</xref>.</p>
+        <p>If there were a second appendix, tables and figures would get the
+  prefix “B”, and the numbering starts again at 1. Make as many
+  appendices as needed.</p>
+        <fig id="fig-appendfig-nb-article">
+          <caption>
+            <p>Figure 5: Appendix Figure</p>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="sampleimage.png"/>
+        </fig>
+      </sec>
+    </body>
+    <back>
+      <ref-list>
+        <title/>
+        <ref id="ref-brownHowKilledPluto2012-nb-article">
+          <element-citation publication-type="book">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Brown</surname>
+                <given-names>Mike</given-names>
+              </name>
+            </person-group>
+            <source>How I killed Pluto and why it had it coming</source>
+            <publisher-name>Spiegel &amp; Grau</publisher-name>
+            <publisher-loc>New York</publisher-loc>
+            <year iso-8601-date="2012">2012</year>
+          </element-citation>
+        </ref>
+        <ref id="ref-CameronTrivedi2013-nb-article">
+          <element-citation publication-type="book">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Cameron</surname>
+                <given-names>A. Colin</given-names>
+              </name>
+              <name>
+                <surname>Trivedi</surname>
+                <given-names>Pravin K.</given-names>
+              </name>
+            </person-group>
+            <source>Regression analysis of count data</source>
+            <publisher-name>Cambridge University Press</publisher-name>
+            <publisher-loc>Cambridge</publisher-loc>
+            <year iso-8601-date="2013">2013</year>
+            <edition>2nd</edition>
+            <pub-id pub-id-type="doi">10.1017/CBO9781139013567</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref-austenMansfieldPark1990-nb-article">
+          <element-citation publication-type="book">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Austen</surname>
+                <given-names>Jane</given-names>
+              </name>
+            </person-group>
+            <source>Mansfield Park</source>
+            <publisher-name>Oxford University Press</publisher-name>
+            <year iso-8601-date="1990">1990</year>
+          </element-citation>
+        </ref>
+        <ref id="ref-schneider2012cattell-nb-article">
+          <element-citation publication-type="chapter">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Schneider</surname>
+                <given-names>William Joel</given-names>
+              </name>
+              <name>
+                <surname>McGrew</surname>
+                <given-names>Kevin S.</given-names>
+              </name>
+            </person-group>
+            <article-title>The Cattell-Horn-Carroll model of intelligence</article-title>
+            <source>Contemporary intellectual assessment: Theories, tests, and issues</source>
+            <person-group person-group-type="editor">
+              <name>
+                <surname>Flanagan</surname>
+                <given-names>Dawn P.</given-names>
+              </name>
+              <name>
+                <surname>Harrison</surname>
+                <given-names>Patti L.</given-names>
+              </name>
+            </person-group>
+            <publisher-name>Guilford Press</publisher-name>
+            <publisher-loc>New York</publisher-loc>
+            <year iso-8601-date="2012">2012</year>
+            <edition>3</edition>
+            <isbn>978-1-60918-995-2</isbn>
+            <uri>https://psycnet.apa.org/record/2012-09043-004</uri>
+            <fpage>99</fpage>
+            <lpage>144</lpage>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </sub-article>
+</article>
