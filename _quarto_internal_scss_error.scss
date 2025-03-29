@@ -5379,7 +5379,7 @@ $bslib-sidebar-column-sidebar: Min(calc(100% - var(--bslib-sidebar-icon-size)), 
   --bslib-sidebar-toggle-transition-easing: cubic-bezier(1, 0, 0, 1);
   --bslib-collapse-toggle-right-transform: 180deg;
   --bslib-sidebar-column-main: minmax(0, 1fr);
-  
+
   display: grid !important;
   grid-template-columns: $bslib-sidebar-column-sidebar var(--bslib-sidebar-column-main);
   position: relative;
@@ -6491,7 +6491,7 @@ table.gt_table tbody.gt_table_body {
   border-top-color: currentColor;
 }
 
-/* restore previous pandoc columns behavior 
+/* restore previous pandoc columns behavior
    (too many reports of slide layout breaking)
    see https://github.com/jgm/pandoc/pull/8237
 */
@@ -8845,7 +8845,7 @@ a {
     --quarto-font-monospace: #{inspect($font-family-monospace)};
   }
   /*! quarto-variables-end */
-  
+
 a.external:after {
   content: "";
   @if variable-exists(link-color) {
