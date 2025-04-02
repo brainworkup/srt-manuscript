@@ -15,7 +15,7 @@ author:
         country: USA
         postal-code: 12084-1234
 author-note:
-  status-changes: 
+  status-changes:
     affiliation-change: ~
     deceased: ~
   disclosures:
@@ -46,6 +46,10 @@ format:
 ## Procedure
 
 # Results
+
+if i spell a word wrong, ok?
+
+I can't afford to do that?
 
 # Discussion
 
