@@ -9,16 +9,16 @@ format:
     toc: false
   apaquarto-html:
     toc: true
-    # apaquarto-typst:
-    #   keep-typ: true
-    #   list-of-figures: false
-    #   list-of-tables: false
-    #   toc: false
+    apaquarto-typst:
+      keep-typ: true
+      list-of-figures: false
+      list-of-tables: false
+      toc: false
     papersize: "us-letter"
-  # apaquarto-pdf:
-  #   # Can be jou (journal), man (manuscript), stu (student), or doc (document)
-  #   documentmode: jou
-  #   keep-tex: true
+  apaquarto-pdf:
+    # Can be jou (journal), man (manuscript), stu (student), or doc (document)
+    documentmode: jou
+    keep-tex: true
   jats: default
   # html:
   #   comments:

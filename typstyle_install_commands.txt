@@ -1,0 +1,25 @@
+# Commands to install typstyle v0.13.2 on macOS
+
+# Check system architecture
+uname -m
+
+# Download appropriate binary (for arm64/Apple Silicon)
+curl -L https://github.com/Enter-tainer/typstyle/releases/download/v0.13.2/typstyle-aarch64-apple-darwin -o typstyle
+
+# If on Intel Mac (x86_64), use this instead
+# curl -L https://github.com/Enter-tainer/typstyle/releases/download/v0.13.2/typstyle-x86_64-apple-darwin -o typstyle
+
+# Make the binary executable
+chmod +x typstyle
+
+# Move to bin directory (create if it doesn't exist)
+mkdir -p ~/bin
+mv typstyle ~/bin/
+
+# Verify installation
+typstyle --version
+
+# For fish shell users: If ~/bin is not in your PATH, add it with:
+mkdir -p ~/.config/fish
+echo 'set -x PATH $HOME/bin $PATH' >> ~/.config/fish/config.fish
+source ~/.config/fish/config.fish

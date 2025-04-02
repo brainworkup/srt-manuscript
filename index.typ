@@ -134,9 +134,9 @@
   }
 
   let new_title_block = block_with_new_content(
-    old_title_block, 
+    old_title_block,
     block_with_new_content(
-      old_title_block.body, 
+      old_title_block.body,
       old_title_block.body.body.children.at(0) +
       old_title_block.body.body.children.at(1) +
       new_title))
@@ -149,23 +149,23 @@
 // 2023-10-09: #fa-icon("fa-info") is not working, so we'll eval "#fa-info()" instead
 #let callout(body: [], title: "Callout", background_color: rgb("#dddddd"), icon: none, icon_color: black) = {
   block(
-    breakable: false, 
-    fill: background_color, 
-    stroke: (paint: icon_color, thickness: 0.5pt, cap: "round"), 
-    width: 100%, 
+    breakable: false,
+    fill: background_color,
+    stroke: (paint: icon_color, thickness: 0.5pt, cap: "round"),
+    width: 100%,
     radius: 2pt,
     block(
       inset: 1pt,
-      width: 100%, 
-      below: 0pt, 
+      width: 100%,
+      below: 0pt,
       block(
-        fill: background_color, 
-        width: 100%, 
+        fill: background_color,
+        width: 100%,
         inset: 8pt)[#text(icon_color, weight: 900)[#icon] #title]) +
       if(body != []){
         block(
-          inset: 1pt, 
-          width: 100%, 
+          inset: 1pt,
+          width: 100%,
           block(fill: white, width: 100%, inset: 8pt, body))
       }
     )
@@ -325,12 +325,12 @@ A reference label for a figure must have the prefix `fig-`, and in a code chunk,
 #figure([
 #box(image("index_files/figure-typst/fig-myplot-1.svg"))
 ], caption: figure.caption(
-position: bottom, 
+position: bottom,
 [
 The Figure Caption
-]), 
-kind: "quarto-float-fig", 
-supplement: "Figure", 
+]),
+kind: "quarto-float-fig",
+supplement: "Figure",
 )
 <fig-myplot>
 
@@ -344,12 +344,12 @@ One way to import an existing graphic as a figure is to use `knitr::include_grap
 #figure([
 #box(image("sampleimage.png", width: 48%))
 ], caption: figure.caption(
-position: bottom, 
+position: bottom,
 [
 An Imported Graphic
-]), 
-kind: "quarto-float-fig", 
-supplement: "Figure", 
+]),
+kind: "quarto-float-fig",
+supplement: "Figure",
 )
 <fig-import1>
 
@@ -359,12 +359,12 @@ Figure graphics can be imported directly with Markdown, as with #ref(<fig-import
 #figure([
 #box(image("sampleimage.png", width: 49%))
 ], caption: figure.caption(
-position: bottom, 
+position: bottom,
 [
 Another Way to Import Graphics
-]), 
-kind: "quarto-float-fig", 
-supplement: "Figure", 
+]),
+kind: "quarto-float-fig",
+supplement: "Figure",
 )
 <fig-import2>
 
@@ -387,12 +387,12 @@ We can make a table the same way as a figure. Generating a table that conforms t
   [4], [D],
 )
 ], caption: figure.caption(
-position: top, 
+position: top,
 [
 The Table Caption
-]), 
-kind: "quarto-float-tbl", 
-supplement: "Table", 
+]),
+kind: "quarto-float-tbl",
+supplement: "Table",
 )
 <tbl-mytable>
 
@@ -412,12 +412,12 @@ In #ref(<tbl-mymarkdowntable>, supplement: [Table]), there is an example of a pl
   [1], [1], [1], [1],
 )
 ], caption: figure.caption(
-position: top, 
+position: top,
 [
 Table Caption of a Markdown Table
-]), 
-kind: "quarto-float-tbl", 
-supplement: "Table", 
+]),
+kind: "quarto-float-tbl",
+supplement: "Table",
 )
 <tbl-mymarkdowntable>
 
@@ -433,12 +433,12 @@ As demonstrated in #ref(<fig-twocolumn>, supplement: [Figure]), you can make fig
 #figure([
 #box(image("index_files/figure-typst/fig-twocolumn-1.svg"))
 ], caption: figure.caption(
-position: bottom, 
+position: bottom,
 [
 A Figure Spanning Two Columns When in Journal Mode
-]), 
-kind: "quarto-float-fig", 
-supplement: "Figure", 
+]),
+kind: "quarto-float-fig",
+supplement: "Figure",
 )
 <fig-twocolumn>
 
@@ -499,7 +499,24 @@ Who are they? How were they recruited? Report criteria for participant inclusion
 
 == Measures
 <measures>
-This section can also be titled #strong[Materials] or #strong[Apparatus];. Whatever tools, equipment, or measurement devices used in the study should be described.
+This section can also be titled #strong[Materials] or #strong[Apparatus];.
+Whatever tools, equipment, or measurement devices used in the study should be
+described.
+
+- Test 1
+  - Test 1a
+  - Test 1b
+
++ Scale 1
+  + scale 1a
+  + scale 1b
+
+- Test 2
+- Test 3
+  - Test 3a
+  - Test 3b
+
+
 
 === Measure A
 <measure-a>
@@ -564,12 +581,12 @@ If there were a second appendix, tables and figures would get the prefix "B", an
 #figure([
 #box(image("sampleimage.png"))
 ], caption: figure.caption(
-position: bottom, 
+position: bottom,
 [
 Appendix Figure
-]), 
-kind: "quarto-float-fig", 
-supplement: "Figure", 
+]),
+kind: "quarto-float-fig",
+supplement: "Figure",
 )
 <fig-appendfig>
 
