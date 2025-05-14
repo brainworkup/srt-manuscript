@@ -1,0 +1,35 @@
+# Simplified R Makevars for macOS
+# Uses Homebrew GCC for OpenMP support with minimal flags
+
+# Use Homebrew's GCC
+GCCBASE := $(shell brew --prefix gcc)
+GETTEXT := $(shell brew --prefix gettext)
+XCBASE := $(shell xcrun --show-sdk-path)
+
+# Find the latest GCC version
+GCCVERSION := $(shell find "${GCCBASE}/bin" -name "gcc-[0-9]*" | sort -V | tail -n 1 | sed "s/.*gcc-//")
+
+# Set compilers
+CC = ${GCCBASE}/bin/gcc-${GCCVERSION}
+CXX = ${GCCBASE}/bin/g++-${GCCVERSION}
+CXX11 = ${GCCBASE}/bin/g++-${GCCVERSION}
+CXX14 = ${GCCBASE}/bin/g++-${GCCVERSION}
+CXX17 = ${GCCBASE}/bin/g++-${GCCVERSION}
+FC = ${GCCBASE}/bin/gfortran-${GCCVERSION}
+F77 = ${GCCBASE}/bin/gfortran-${GCCVERSION}
+
+# Basic flags - simplified
+CFLAGS = -g -O2 -Wall -fopenmp
+CXXFLAGS = -g -O2 -Wall -fopenmp
+FFLAGS = -g -O2 -fopenmp
+FCFLAGS = -g -O2 -fopenmp
+
+# Basic include paths - simplified
+CPPFLAGS = -I"${GCCBASE}/include" -I"${GETTEXT}/include"
+LDFLAGS = -L"${GCCBASE}/lib" -L"${GETTEXT}/lib"
+
+# Enable OpenMP
+PKG_CFLAGS += $(SHLIB_OPENMP_CFLAGS)
+PKG_CXXFLAGS += $(SHLIB_OPENMP_CXXFLAGS)
+PKG_FFLAGS += $(SHLIB_OPENMP_FFLAGS)
+PKG_FCFLAGS += $(SHLIB_OPENMP_FCFLAGS)
